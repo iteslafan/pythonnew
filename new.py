@@ -45,7 +45,7 @@ while True:
             f.write(ss_content+'\n')
     # if driver.page_source.find('page_next_' +str(next_num))== -1:
     #     break
-    if next_num>40:
+    if next_num>10:
         break
 
     driver.find_element_by_id('pager_next_'+str(next_num)).click()
